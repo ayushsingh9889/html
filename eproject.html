@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Starter Site</title>
+  <link rel="stylesheet" href="eplatform.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Starter Site</h1>
+    <nav aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h2>Build fast. Learn faster.</h2>
+      <p>A minimal boilerplate to get you going with HTML, CSS, and JS.</p>
+      <button id="ctaBtn" class="btn btn-primary">Click Me</button>
+    </section>
+
+    <section class="features" id="features">
+      <h3>Features</h3>
+      <ul class="grid">
+        <li>
+          <h4>Clean Markup</h4>
+          <p>Semantic, accessible, and easy to extend.</p>
+        </li>
+        <li>
+          <h4>Modern CSS</h4>
+          <p>Responsive layout with a simple grid.</p>
+        </li>
+        <li>
+          <h4>Vanilla JS</h4>
+          <p>No frameworks—just what you need.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact</h3>
+      <form id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <p id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> My Starter Site</small>
+  </footer>
+
+  <script src="eplatform.js"></script>
+</body>
+</html>

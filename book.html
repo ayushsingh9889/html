@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <!-- Log in Section -->
+    <fieldset>
+        <legend>Log in now</legend>
+        <label for="username"><b>Please enter your user name</b></label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password"><b>Your password is</b></label><br>
+        <input type="password" id="password" name="password">
+    </fieldset>
+    <br>
+
+    <!-- Choices Section -->
+    <fieldset>
+        <legend>Choices!</legend>
+        <label for="colour"><b>Favourite colour</b></label>
+        <input type="text" id="colour" name="colour" value="green"><br><br>
+
+        <label for="fruit">My favourite fruit is:</label>
+        <select id="fruit" name="fruit">
+            <option value="apple" selected>Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+        </select><br><br>
+
+        <p>I live in a:</p>
+        <input type="radio" id="house" name="residence" value="house">
+        <label for="house">House</label>
+        <input type="radio" id="flat" name="residence" value="flat">
+        <label for="flat">Flat</label>
+        <input type="radio" id="bedsit" name="residence" value="bedsit">
+        <label for="bedsit">Bedsit</label>
+        <input type="radio" id="caravan" name="residence" value="caravan">
+        <label for="caravan">Caravan</label><br><br>
+
+        <label for="file">My upload file is:</label>
+        <input type="file" id="file" name="file">
+    </fieldset>
+    <br>
+
+    <!-- Message Section -->
+    <fieldset>
+        <legend>Leaving?</legend>
+        <label for="message"><b>You can leave a message for me here:</b></label><br>
+        <textarea id="message" name="message" rows="5" cols="50"></textarea>
+    </fieldset>
+    <br>
+
+    <!-- Buttons -->
+    <input type="submit" value="GO!">
+    <input type="reset" value="START AGAIN">
+
+</form>
+
+</body>
+</html>

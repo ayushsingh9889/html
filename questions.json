@@ -1,0 +1,56 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "correct_answer": "Paris",
+        "incorrect_answers": [
+            "London",
+            "Berlin",
+            "Madrid"
+        ]
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "correct_answer": "Mars",
+        "incorrect_answers": [
+            "Venus",
+            "Jupiter",
+            "Saturn"
+        ]
+    },
+    {
+        "question": "What is the largest mammal?",
+        "correct_answer": "Blue whale",
+        "incorrect_answers": [
+            "Elephant",
+            "Giraffe",
+            "Polar bear"
+        ]
+    },
+    {
+        "question": "In which year did World War II end?",
+        "correct_answer": "1945",
+        "incorrect_answers": [
+            "1939",
+            "1941",
+            "1950"
+        ]
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "correct_answer": "Au",
+        "incorrect_answers": [
+            "Ag",
+            "Fe",
+            "Hg"
+        ]
+    },
+    {
+        "question": "What is the correct syntax to declare a variable in C?",
+        "correct_answer": "int name;",
+        "incorrect_answers": [
+            "variable name;",
+            "name=variable",
+            "declare name;"
+        ]
+    }
+]

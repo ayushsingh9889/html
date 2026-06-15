@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Enviroment🌍</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .concept-container {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .answer {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            display: none;
+            color: #555;
+        }
+        .subtopic-question {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-left: 15px;
+            color: #28a745; /* Green for subtopics */
+            cursor: pointer;
+        }
+        .subtopic-answer {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f0fff0; /* Light green for subtopic answers */
+            border-radius: 4px;
+            display: none;
+            color: #666;
+            margin-left: 30px;
+        }
+        .cause-effect-list {
+            margin-left: 20px;
+        }
+        .cause-effect-list li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Environmental study</h1>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('what-is-environment')">What is the Environment?</p>
+        <div id="what-is-environment" class="answer">
+            The environment encompasses all the living (biotic) and non-living (abiotic) components that interact with each other in a specific area. This includes things like air, water, land, plants, animals, and even human-made structures. It's the natural world around us and the conditions in which we live.
+        </div>
+    </div>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('effects-of-environment')">What are the Effects of the Environment on Living Things?</p>
+        <div id="effects-of-environment" class="answer">
+            The environment profoundly affects living things. It provides essential resources like food, water, and shelter. Environmental conditions such as temperature, climate, and the availability of resources directly influence the survival, growth, and reproduction of organisms. Changes in the environment can lead to adaptation, migration, or even extinction of species. Human activities can have significant positive or negative effects on these natural processes.
+        </div>
+    </div>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('what-is-pollution')">What is Pollution?</p>
+        <div id="what-is-pollution" class="answer">
+            Pollution is the introduction of harmful substances or contaminants into the environment, causing adverse changes. This can take many forms:
+
+            <p class="subtopic-question" onclick="toggleAnswer('air-pollution')">Air Pollution: Causes & Effects</p>
+            <div id="air-pollution" class="subtopic-answer">
+                <strong>Causes:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Burning fossil fuels</strong> (coal, oil, gas) for energy and transportation.</li>
+                    <li><strong>Industrial emissions</strong> (factories, power plants).</li>
+                    <li><strong>Vehicle exhaust</strong> (cars, trucks, airplanes).</li>
+                    <li><strong>Agricultural activities</strong> (pesticides, livestock methane).</li>
+                    <li><strong>Deforestation</strong> (reduces air purification by trees).</li>
+                </ul>
+                <strong>Effects:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Respiratory diseases</strong> (asthma, lung cancer).</li>
+                    <li><strong>Acid rain</strong> (harms soil, water, and buildings).</li>
+                    <li><strong>Global warming</strong> (greenhouse gas emissions).</li>
+                    <li><strong>Damage to ecosystems</strong> (plants, animals).</li>
+                </ul>
+            </div>
+
+            <p class="subtopic-question" onclick="toggleAnswer('water-pollution')">Water Pollution: Causes & Effects</p>
+            <div id="water-pollution" class="subtopic-answer">
+                <strong>Causes:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Industrial waste</strong> (chemicals, heavy metals).</li>
+                    <li><strong>Sewage and wastewater</strong> (untreated disposal).</li>
+                    <li><strong>Agricultural runoff</strong> (fertilizers, pesticides).</li>
+                    <li><strong>Oil spills</strong> (from ships or pipelines).</li>
+                    <li><strong>Plastic waste</strong> (microplastics in oceans).</li>
+                </ul>
+                <strong>Effects:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Contaminated drinking water</strong> (diseases like cholera).</li>
+                    <li><strong>Death of aquatic life</strong> (fish, coral reefs).</li>
+                    <li><strong>Eutrophication</strong> (algal blooms deplete oxygen).</li>
+                    <li><strong>Disruption of food chains</strong>.</li>
+                </ul>
+            </div>
+
+            <p class="subtopic-question" onclick="toggleAnswer('land-pollution')">Soil Pollution: Causes & Effects</p>
+            <div id="land-pollution" class="subtopic-answer">
+                <strong>Causes:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Industrial waste dumping</strong> (toxic chemicals).</li>
+                    <li><strong>Agricultural chemicals</strong> (pesticides, fertilizers).</li>
+                    <li><strong>Deforestation</strong> (soil erosion).</li>
+                    <li><strong>Improper waste disposal</strong> (landfills, plastics).</li>
+                    <li><strong>Mining activities</strong> (heavy metals).</li>
+                </ul>
+                <strong>Effects:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Loss of soil fertility</strong> (reduced crop yields).</li>
+                    <li><strong>Contamination of food</strong> (chemical absorption).</li>
+                    <li><strong>Groundwater pollution</strong> (leaching of toxins).</li>
+                    <li><strong>Harm to microorganisms</strong> (disrupts ecosystems).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('what-is-climate-change')">What is Climate Change?</p>
+        <div id="what-is-climate-change" class="answer">
+            Climate change refers to long-term shifts in temperatures and weather patterns. While natural variations in climate have occurred throughout Earth's history, the current changes are largely attributed to human activities, primarily the burning of fossil fuels. This releases greenhouse gases into the atmosphere, trapping heat and leading to a warming planet.
+            
+            <p class="subtopic-question" onclick="toggleAnswer('causes-of-climate-change')">What are the Main Causes of Climate Change?</p>
+            <div id="causes-of-climate-change" class="subtopic-answer">
+                The primary driver of current climate change is the increase in greenhouse gas concentrations in the atmosphere due to human activities. These gases, such as carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), trap heat. The main sources of these emissions include the burning of fossil fuels for energy (electricity, transportation, industry), deforestation (which reduces CO2 absorption), industrial processes, and agriculture.
+            </div>
+            
+            <p class="subtopic-question" onclick="toggleAnswer('effects-of-climate-change')">What are the Major Effects of Climate Change?</p>
+            <div id="effects-of-climate-change" class="subtopic-answer">
+                The effects of climate change are wide-ranging and include rising global temperatures, more frequent and intense extreme weather events (such as heatwaves, droughts, floods, and storms), rising sea levels (due to thermal expansion of water and melting ice), ocean acidification (due to increased CO2 absorption by oceans), disruptions to ecosystems and biodiversity, impacts on agriculture and food security, and risks to human health and infrastructure.
+            </div>
+        </div>
+    </div>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('what-is-deforestation')">What is Deforestation?</p>
+        <div id="what-is-deforestation" class="answer">
+            Deforestation is the large-scale removal of forests for agriculture, logging, or urban development. It leads to habitat loss, climate change, and soil degradation.
+            
+            <p class="subtopic-question" onclick="toggleAnswer('causes-of-deforestation')">Causes of Deforestation</p>
+            <div id="causes-of-deforestation" class="subtopic-answer">
+                <ul class="cause-effect-list">
+                    <li><strong>Agriculture</strong> (clearing land for crops/livestock).</li>
+                    <li><strong>Logging</strong> (wood for paper, furniture).</li>
+                    <li><strong>Urbanization</strong> (cities, roads).</li>
+                    <li><strong>Mining</strong> (extracting minerals).</li>
+                </ul>
+            </div>
+            
+            <p class="subtopic-question" onclick="toggleAnswer('effects-of-deforestation')">Effects of Deforestation</p>
+            <div id="effects-of-deforestation" class="subtopic-answer">
+                <ul class="cause-effect-list">
+                    <li><strong>Loss of biodiversity</strong> (extinction of species).</li>
+                    <li><strong>Increased CO2 levels</strong> (worsens climate change).</li>
+                    <li><strong>Soil erosion</strong> (reduces fertility).</li>
+                    <li><strong>Disrupted water cycles</strong> (droughts/floods).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="concept-container">
+        <p class="question" onclick="toggleAnswer('what-is-conservation')">What is Environmental Conservation?</p>
+        <div id="what-is-conservation" class="answer">
+            Environmental conservation is the practice of protecting and managing natural resources to prevent their depletion and ensure their sustainability for future generations. This involves efforts to preserve biodiversity, protect habitats, reduce pollution, manage waste responsibly, and promote sustainable practices in various sectors like agriculture, forestry, and energy production.
+            
+            <p class="subtopic-question" onclick="toggleAnswer('renewable-energy')">Renewable Energy Solutions</p>
+            <div id="renewable-energy" class="subtopic-answer">
+                <strong>Examples of renewable energy sources:</strong>
+                <ul class="cause-effect-list">
+                    <li><strong>Solar power</strong> (sunlight → electricity).</li>
+                    <li><strong>Wind energy</strong> (turbines generate power).</li>
+                    <li><strong>Hydropower</strong> (water flow → energy).</li>
+                    <li><strong>Geothermal</strong> (heat from Earth’s core).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            const answerDiv = document.getElementById(answerId);
+            if (answerDiv.style.display === 'none' || answerDiv.style.display === '') {
+                answerDiv.style.display = 'block';
+            } else {
+                answerDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

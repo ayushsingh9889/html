@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Tech Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:yello;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select, button, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h2>National Tech Event Registration</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" required>
+        
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+            <option value="hackathon">Hackathon</option>
+            <option value="ai_conference">AI Conference</option>
+            <option value="robotics_challenge">Robotics Challenge</option>
+            <option value="coding_competition">Coding Competition</option>
+        </select>
+        
+        <button type="submit">Register</button>
+        <button type="reset" style="background-color: #dc3545;">Reset</button>
+    </form>
+</body>
+</html>
+
+  
+

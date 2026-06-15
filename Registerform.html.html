@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Registration Form</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px 0;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+    width:400px;
+    padding:40px 30px;
+    margin-top:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    color:white;
+}
+
+.container h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder{
+    color:#f1f1f1;
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    background:rgba(255,255,255,0.3);
+    transform:scale(1.02);
+    box-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+.plan{
+    margin:20px 0;
+}
+
+.plan p{
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.plan label{
+    margin-right:15px;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:18px 0;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#0072ff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0072ff;
+    color:white;
+    transform:translateY(-3px);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Register Form</h1>
+
+<form>
+
+<div class="input-box">
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+</div>
+
+<div class="input-box">
+<label for="phone">Phone</label>
+<input type="tel" id="phone" placeholder="Enter phone number">
+</div>
+
+<div class="input-box">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Enter your email">
+</div>
+
+<div class="input-box">
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Enter password">
+</div>
+
+<div class="input-box">
+<label for="gender">Gender</label>
+<input type="text" id="gender" placeholder="Enter gender">
+</div>
+
+<div class="input-box">
+<label for="age">Age</label>
+<input type="number" id="age" placeholder="Enter age">
+</div>
+
+<div class="input-box">
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob">
+</div>
+
+<div class="input-box">
+<label for="color">Favorite Color</label>
+<input type="color" id="color">
+</div>
+
+<div class="plan">
+<p>Subscription Plan</p>
+
+<input type="radio" id="basic" name="plan">
+<label for="basic">Basic</label>
+
+<input type="radio" id="premium" name="plan">
+<label for="premium">Premium</label>
+
+<input type="radio" id="pro" name="plan">
+<label for="pro">Pro</label>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" id="terms">
+<label for="terms">I agree to terms & conditions</label>
+</div>
+
+<div class="input-box">
+<label for="comments">Comments</label>
+<textarea id="comments" rows="4" placeholder="Enter your comments"></textarea>
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
